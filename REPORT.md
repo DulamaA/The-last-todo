@@ -1,9 +1,10 @@
 # 📌 Rättningsrapport – fed24d-the-last-todos-DulamaA
 
 ## 🎯 Uppgiftens Krav:
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Tfc19Mhg)
 # Inlämningsuppgift Todo
 
-I denna inlämningsuppgift kommer ni att skapa er egen todo-lista i en react-applikation.
+I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
 Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
 
 ## Betyg G
@@ -11,17 +12,20 @@ Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp p
 - Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter, dessa skall inte bara vara en text)
 - Presentera listan på skärmen, helst med lite kontroll. Detta betyder i en html-struktur t.ex. i en ul/li-lista
 - Implementera klickhändelse för att hantera borttagandet av en todo.
-- Todo markeras som klar/tas bort från skärmen och markeras som klar i javascript-listan.
+- Todo markeras som klar på skärmen och markeras som klar i javascript-listan.
+- Ni behöver använda localStorage så att listan inte börjar om från början varje gång sidan används.
+- Ni behöver använda er av en komponent.
+- Ni behöver använda er av state med en lista med objekt.
 
 ## Betyg VG
 
 - Alla punkter under G
 - Kunna visa även klara händelser och klicka tillbaka den så att de blir oklara igen.
 - Skapa ett formulär som tillåter att en användare skapar nya todos efterhand.
-- Använda lifting state up för att dela upp dina komponenter bättre.
 - Kunna sortera ordningen på dina todos.
-- Implementera ett valfritt grafiskt ramverk till din todolista, t.ex. material ui eller tailwind.
-- Egen css får gärna skrivas och då skall ni ha en bra struktur och använda flex eller grid på ett bra sätt.
+- Implementera ett valfritt grafiskt ramverk, t.ex. tailwind eller material ui.
+- Ni behöver ha minst tre komponenter.
+- Ni måste använda Lifting State Up.
 
 ## Allmänt
 
@@ -50,7 +54,7 @@ för att köra projektet.
 - C:\Work\AssignmentCorrector\backend\repos\fed24d-the-last-todos-DulamaA\src\models\TodoTypes.ts - no-unused-vars - 'id' is defined but never used.,no-unused-vars - 'id' is defined but never used.,no-unused-vars - 'id' is defined but never used.,no-unused-vars - 'id' is defined but never used.,no-unused-vars - 'titel' is defined but never used.
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller samtliga kriterier för både G och VG. Todo-listan är hårdkodad och presenteras med en genomtänkt HTML-struktur. Implementationen inkluderar både tillståndshantering och klickhändelser för att märka en todo som klar, samt ta bort den från skärmen och listan i JavaScript. Vidare tillhandahåller implementationen funktionalitet för att visa klara händelser och markera om dem som oklara, möjlighet att sortera todo-listan och inkluderar ett formulär för att lägga till nya todos. State har lyfts upp på en korrekt sätt och TailwindCSS används, vilket ger en bra visuell upplevelse tillsammans med egen anpassad CSS.
+📌 **Motivering:** Koden uppfyller alla krav för både G och VG. Den har en hårdkodad lista med todo-uppgifter, visar todos i en strukturerad lista, och implementerar funktionalitet för att markera och omvända todo-uppgifter som klara/oklara. Användaren kan skapa nya todos och sortera dem. LocalStorage används effektivt för att bevara todo-listan över sidladdningar. Projektet använder minst tre komponenter, använder sig av Lifting State Up, och nyttjar Tailwind CSS som ett grafiskt ramverk.
 
 💡 **Förbättringsförslag:**  
-En eventuell förbättring kan vara att lägga till en validering eller feedback till användaren om de försöker lägga till en todo utan titel. Ytterligare förbättringar kan omfatta mer avancerad felhantering, t.ex. att hantera JSON.parse-fel när data hämtas från localStorage, samt att inkludera en enhetstestning för att säkerställa kodens robusthet.
+Trots att uppgiften är väl genomförd finns det några förbättringsmöjligheter: Kommentarer i koden kan förbättras för att ge tydligare kontext för olika delblock. För att öka användarupplevelsen kan felhantering läggas till för att visa meddelanden vid tomma inmatningsfält eller andra misslyckade användarhandlingar. Underhåll av CSS-klasser kan optimeras genom att använda mer konsekventa namnkonventioner och använda Tailwinds stilverktyg till fullo.
