@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/fed24d-the-last-todos-DulamaA/",
+  base: "https://github.com/DulamaA/The-last-todo",
   plugins: [react(), tailwindcss()],
 });
